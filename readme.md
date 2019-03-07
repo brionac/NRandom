@@ -2,6 +2,9 @@
 A random function with normal distribution .
 
 How to use:
+npm install normaldisrandom --save
+
+In javascript:
 
 import NRandrom from 'nrandom';
 let nr = new NRandom();
