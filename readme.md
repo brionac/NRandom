@@ -9,14 +9,13 @@ let nr = new NRandom();
 Create a pool with poolId, miu and sigma.<br/>
 sigma[i] has a default value miu[i]/3<br/>
 */<br/>
-nr.newRandomPool(1000, 
-  [6, 3, 2],
-  [6/3, 3/3, 2/3]
-)
-
-nr.newRandomPool(1001, 
-  [6, 3, 2]
-);
+nr.newRandomPool(1000, <br/>
+  [6, 3, 2],<br/>
+  [6/3, 3/3, 2/3]<br/>
+)<br/>
+nr.newRandomPool(1001, <br/>
+  [6, 3, 2]<br/>
+);<br/>
 
 /*<br/>
 random result range in [0, sigma.length-1]<br/>
