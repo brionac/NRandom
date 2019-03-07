@@ -17,6 +17,8 @@ nr.newRandomPool(1001,
 );
 
 //random result range in [0, sigma.length-1]
-let ret1 = nr.NRandomRet(1000);<br/>
-let ret2 = nr.NRandomRet(1001);
+//returns 0, 1 or 2 with P = [1/6, 1/3, 1/2], μ = [6,3,2]， σ = [2, 1, 2/3]
+
+let ret1 = nr.NRandomRet(1000);  
+let ret2 = nr.NRandomRet(1001); 
 ```
