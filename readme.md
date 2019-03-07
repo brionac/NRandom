@@ -2,7 +2,7 @@ A random function with normal distribution .
 
 How to use:
 
-import NRandrom from 'nrandom';
+import NRandrom from 'nrandom';<br/>
 let nr = new NRandom();
 
 /*<br/>
@@ -21,6 +21,6 @@ nr.newRandomPool(1001,
 /*<br/>
 random result range in [0, sigma.length-1]<br/>
 */<br/>
-let ret1 = nr.NRandomRet(1000);
+let ret1 = nr.NRandomRet(1000);<br/>
 let ret2 = nr.NRandomRet(1001);
 
