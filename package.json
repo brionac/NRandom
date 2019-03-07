@@ -1,0 +1,17 @@
+{
+  "name": "nrandom",
+  "version": "1.0.0",
+  "description": "N(miu, sigma)",
+  "main": "./lib/NRandom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Normal distribution",
+    "Random"
+  ],
+  "author": "Brionac",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

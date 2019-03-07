@@ -1,0 +1,4 @@
+{
+  "plugins":["transform-class-properties", "babel-plugin-transform-runtime"],
+  "presets":["env", "stage-3"]
+}
