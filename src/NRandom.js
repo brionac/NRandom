@@ -81,14 +81,14 @@ class NRandom {
 
     //heap doing
     let j = 0;
-    //May while(1) already right.
+    //May while(1) also right.
     while (j<poolInfo.NRandomRet.length){
       let c1 = j*2+1;
       let c2 = j*2+2;
       let swapIdx = -1;
 
       let c = c1;
-      //决定到底应该换哪一个
+      //Which child should be swap
       if ((c2 < poolInfo.NRandomRet.length) && (poolInfo.NRandomRet[c2] <= poolInfo.NRandomRet[c1])){
         c = c2;
       }
