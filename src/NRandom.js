@@ -16,8 +16,7 @@ class NRandom {
   newRandomPool(pId, mius, sigmas = []){
 
     if (this.NPool[pId]){
-      console.log(`[Warning] N random pool Id already exists at ${pId}`);
-      return;
+      console.log(`[Warning] N random pool Id already exists at ${pId}, it will be rewrite`);
     }
 
     this.NPool[pId] = {
@@ -68,8 +67,8 @@ class NRandom {
   NRandomRet(pId){
 
     if (!this.NPool[pId]){
-      console.log(`[Warning] N Random pool ${pId} is null`);
-      return;
+      console.log(`[Warning] N Random pool ${pId} is null. Random result will be 0`);
+      return 0;
     }
     
     let poolInfo = this.NPool[pId];
