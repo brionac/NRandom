@@ -86,11 +86,15 @@ class NRandom {
       let c1 = j*2+1;
       let c2 = j*2+2;
       let swapIdx = -1;
-      if ((c1 < poolInfo.NRandomRet.length) && (poolInfo.NRandomRet[j] > poolInfo.NRandomRet[c1]) && (poolInfo.NRandomRet[c1] <= poolInfo.NRandomRet[c2])){
-        swapIdx = c1;
+
+      let c = c1;
+      //决定到底应该换哪一个
+      if ((c2 < poolInfo.NRandomRet.length) && (poolInfo.NRandomRet[c2] <= poolInfo.NRandomRet[c1])){
+        c = c2;
       }
-      else if ((c2 < poolInfo.NRandomRet.length) && (poolInfo.NRandomRet[j] > poolInfo.NRandomRet[c2]) && (poolInfo.NRandomRet[c2] <= poolInfo.NRandomRet[c1])){
-        swapIdx = c2;
+
+      if ((c < poolInfo.NRandomRet.length) && (poolInfo.NRandomRet[j] > poolInfo.NRandomRet[c])){
+        swapIdx = c;
       }
       else{
         break;
@@ -107,6 +111,9 @@ class NRandom {
 
       j = swapIdx;
     }
+
+    //console.log(poolInfo.NRandomRet.map(v=>Math.floor(v)).join(','));
+    //console.log(poolInfo.NRandomIdx.map(v=>Math.floor(v)).join(','));
     return ret;
   }
 }
