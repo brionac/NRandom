@@ -87,10 +87,10 @@ class NRandom {
       let c1 = j*2+1;
       let c2 = j*2+2;
       let swapIdx = -1;
-      if ((c1 < poolInfo.NRandomRet.length) && (poolInfo.NRandomRet[j] > poolInfo.NRandomRet[c1])){
+      if ((c1 < poolInfo.NRandomRet.length) && (poolInfo.NRandomRet[j] > poolInfo.NRandomRet[c1]) && (poolInfo.NRandomRet[c1] <= poolInfo.NRandomRet[c2])){
         swapIdx = c1;
       }
-      else if ((c2 < poolInfo.NRandomRet.length) && (poolInfo.NRandomRet[j] > poolInfo.NRandomRet[c2])){
+      else if ((c2 < poolInfo.NRandomRet.length) && (poolInfo.NRandomRet[j] > poolInfo.NRandomRet[c2]) && (poolInfo.NRandomRet[c2] <= poolInfo.NRandomRet[c1])){
         swapIdx = c2;
       }
       else{
@@ -108,7 +108,6 @@ class NRandom {
 
       j = swapIdx;
     }
-
     return ret;
   }
 }
