@@ -1,6 +1,5 @@
 ```
 A random function with normal distribution .
-Current Version: 1.0.1
 
 How to use:
 npm install normaldisrandom --save
